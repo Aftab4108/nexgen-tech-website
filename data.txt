@@ -1,0 +1,50 @@
+**deekseek complete project creation** 
+https://chat.deepseek.com/share/k8m93rjlh55io472gn
+
+**web site link**
+https://subsystem-onion-trough.ngrok-free.dev
+
+
+**how to run**
+# open Docker Desktop first and wait until its run
+
+# ============================================
+# COMPANY WEBSITE DOCKER DEPLOYMENT COMMANDS
+# ============================================
+
+# 1. Build Docker image
+docker build -t company-website 
+
+# 2. Remove any old container with same name (ignore if none)
+docker rm -f my-site 2>$null
+
+# 3. Run the container (maps port 8080 on your PC to port 80 inside container)
+docker run -d -p 8080:80 --name my-site company-website
+
+# 4. Open website in default browser
+Start-Process "http://localhost:8080"
+
+# 5. (Optional) Share website publicly using ngrok (install ngrok first)
+#    Uncomment the line below after installing ngrok and setting authtoken
+#    If web site link is not opning run this command on command prompt 
+# ngrok http 8080
+
+# ============================================
+# USEFUL COMMANDS
+# ============================================
+
+# Stop the container
+# docker stop my-site
+
+# Start the container again
+# docker start my-site
+
+# See running containers
+# docker ps
+
+# View container logs
+# docker logs my-site
+
+# Remove container and image (when done)
+# docker rm -f my-site
+# docker rmi company-website
