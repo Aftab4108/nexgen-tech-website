@@ -1,14 +1,60 @@
+# Automated Website Deployment Using Docker & GitHub
+
+I developed a responsive static company website using HTML, CSS, and JavaScript to simulate a real-world business website. .
+The project was designed to demonstrate fundamental DevOps concepts, including version control, containerization, deployment, 
+and application accessibility.
+
+To ensure consistency across different environments, I containerized the website using Docker and served it through an Nginx 
+web server running inside a Docker container. This approach allowed the application to run reliably regardless of the underlying 
+operating system or machine configuration.
+
+I used Git for source code management and GitHub as the central repository for storing, tracking, and maintaining project versions. 
+This enabled efficient version control, change tracking, and collaboration practices commonly used in software development teams.
+
+As part of the deployment workflow, I created a Dockerfile to build a Docker image from the website source code and deployed the
+application as a Docker container. This simplified the deployment process and ensured a consistent runtime environment.
+
+To make the locally hosted application accessible over the internet, I used ngrok to create a secure public tunnel. This allowed 
+external users to access and test the website through a public URL without requiring deployment to a cloud platform.
+
+Through this project, I gained hands-on experience with Docker image creation, container management, Git and GitHub workflows, Nginx 
+web server configuration, and deployment processes. The project strengthened my understanding of DevOps practices, including application 
+packaging, environment consistency, source code management, and basic CI/CD concepts.
+
+Technologies Used:
+
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
+* Docker
+* Nginx
+* ngrok
+
+Key Skills Demonstrated:
+
+* Version Control with Git and GitHub
+* Docker Containerization
+* Nginx Web Server Configuration
+* Application Deployment
+* Container Management
+* DevOps Fundamentals
+* Deployment Workflow Management
+* Basic CI/CD Concepts
+========================================================================================
+
 **deekseek complete project creation** 
 https://chat.deepseek.com/share/k8m93rjlh55io472gn
 
 **web site link**
 https://subsystem-onion-trough.ngrok-free.dev
-
+========================================================================================
 
 **how to run**
 # open Docker Desktop first and wait until its run
 
-# ============================================
+# ========================================================================================
 # COMPANY WEBSITE DOCKER DEPLOYMENT COMMANDS
 # ============================================
 
@@ -29,7 +75,7 @@ Start-Process "http://localhost:8080"
 #    If web site link is not opning run this command on command prompt 
 # ngrok http 8080
 
-# ============================================
+# ========================================================================================
 # USEFUL COMMANDS
 # ============================================
 
